@@ -1,35 +1,210 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FOMIES · Access Pass Members</title>
-<meta http-equiv="refresh" content="60">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FOMIES — Access Pass Registry</title>
+<meta name="description" content="Live registry of FOMIES access pass holders and raid winners. Auto-tracked from @fomiesofficial.">
+<link rel="icon" href="data:image/webp;base64,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">
 <style>
-body{background:#0a0a0f;color:#e8e6f0;font-family:'Segoe UI',system-ui,sans-serif;margin:0;padding:24px}
-.wrap{max-width:760px;margin:0 auto}
-h1{font-size:1.6rem;letter-spacing:2px;color:#f5c518;margin:0 0 4px}
-.sub{color:#888;margin:0 0 24px;font-size:.85rem}
-h2{font-size:1.05rem;color:#bbb;border-bottom:1px solid #222;padding-bottom:6px;margin:28px 0 12px}
-ul{list-style:none;padding:0;margin:0}
-li{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid #1c1c26;
-    border-radius:10px;margin-bottom:8px;background:#101018}
-.xicon{width:18px;height:18px;border-radius:4px}
-.user{color:#f5c518;font-weight:600;text-decoration:none;font-size:1rem}
-.user:hover{text-decoration:underline}
-.when{margin-left:auto;color:#666;font-size:.75rem}
-.tag{font-size:.65rem;padding:2px 8px;border-radius:99px;letter-spacing:1px}
-.gold{background:#f5c51822;color:#f5c518;border:1px solid #f5c51844}
-.green{background:#22c55e22;color:#22c55e;border:1px solid #22c55e44}
-.empty{color:#555;font-style:italic}
-.count{color:#f5c518;font-weight:700}
-</style></head><body><div class="wrap">
-<h1>🎩 FOMIES</h1>
-<p class="sub">ACCESS PASS MEMBERS · auto-tracked from @fomiesofficial · updates every 60s</p>
-<h2>ACCESS PASS MEMBERS <span class="count">1</span></h2>
-<ul><li><span class="tag gold">ACCESS PASS</span><img class="xicon" src="https://abs.twimg.com/favicons/twitter.3.ico" alt="X"><a class="user" href="https://x.com/l0udp4ck42O" target="_blank">@l0udp4ck42O</a><span class="when">Oct 17 11:51 UTC</span></li></ul>
-<h2>RAID WINNERS <span class="count">3</span></h2>
-<ul><li><span class="tag green">RAID WINNER</span><img class="xicon" src="https://abs.twimg.com/favicons/twitter.3.ico" alt="X"><a class="user" href="https://x.com/_Potential_man" target="_blank">@_Potential_man</a><span class="when">Oct 17 11:51 UTC</span></li>
-<li><span class="tag green">RAID WINNER</span><img class="xicon" src="https://abs.twimg.com/favicons/twitter.3.ico" alt="X"><a class="user" href="https://x.com/hoomihero1" target="_blank">@hoomihero1</a><span class="when">Oct 17 11:51 UTC</span></li>
-<li><span class="tag green">RAID WINNER</span><img class="xicon" src="https://abs.twimg.com/favicons/twitter.3.ico" alt="X"><a class="user" href="https://x.com/AliLuckyXyz" target="_blank">@AliLuckyXyz</a><span class="when">Oct 17 11:51 UTC</span></li></ul>
-<p class="sub">Last scan: 2026-10-17 11:51:38 UTC ·
-CSV: <a style="color:#f5c518" href="members.csv">members.csv</a> ·
-source: <a style="color:#666" href="https://t.me/s/fomiesofficial">t.me/fomiesofficial</a></p>
-</div></body></html>
+:root {
+  --bg:#07070b; --bg2:#0c0c14; --surface:#111119; --line:#1e1e2a;
+  --text:#eceaf4; --dim:#8a8798; --gold:#f5c518; --gold2:#ffd95e;
+  --green:#34d399; --radius:16px;
+  --shadow: 0 8px 32px rgba(0,0,0,.5);
+}
+[data-theme="light"] {
+  --bg:#f4f2ec; --bg2:#faf9f5; --surface:#ffffff; --line:#e4e1d8;
+  --text:#191720; --dim:#6d6a78; --gold:#8a6d00; --gold2:#6d5500;
+  --green:#0d9268; --shadow: 0 8px 32px rgba(30,25,10,.12);
+}
+[data-theme="midnight"] {
+  --bg:#04060f; --bg2:#070b18; --surface:#0b1022; --line:#141c36;
+  --text:#dfe6ff; --dim:#5f6a8f; --gold:#7aa2ff; --gold2:#9dbcff;
+  --green:#4ade80;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'SF Pro Display','Segoe UI',system-ui,-apple-system,sans-serif;
+  min-height:100vh;transition:background .5s ease,color .5s ease;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:
+  radial-gradient(ellipse 80% 50% at 50% -10%, color-mix(in srgb,var(--gold) 7%,transparent), transparent 70%),
+  radial-gradient(ellipse 60% 40% at 90% 110%, color-mix(in srgb,var(--gold) 4%,transparent), transparent);
+  pointer-events:none;z-index:0}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px 80px;position:relative;z-index:1}
+
+/* HERO */
+header{padding:72px 0 44px;text-align:center;position:relative}
+.hero-orb{position:absolute;left:50%;top:8px;transform:translateX(-50%);width:340px;height:340px;
+  background:radial-gradient(circle,color-mix(in srgb,var(--gold) 14%,transparent),transparent 65%);
+  filter:blur(30px);animation:breathe 6s ease-in-out infinite;pointer-events:none}
+@keyframes breathe{0%,100%{opacity:.5;transform:translateX(-50%) scale(1)}50%{opacity:.9;transform:translateX(-50%) scale(1.15)}}
+.crest{width:84px;height:84px;border-radius:22px;margin:0 auto 20px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--surface),var(--bg2));border:1px solid var(--line);
+  box-shadow:var(--shadow);animation:rise .8s cubic-bezier(.2,.8,.2,1) both;position:relative;overflow:hidden}
+.crest::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.08) 50%,transparent 60%);
+  transform:translateX(-100%);animation:shine 4.5s ease-in-out infinite 1s}
+@keyframes shine{0%{transform:translateX(-100%)}55%,100%{transform:translateX(100%)}}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.crest img{width:52px;height:52px;object-fit:contain}
+h1{font-size:clamp(2rem,5.5vw,3.2rem);font-weight:800;letter-spacing:.14em;
+  background:linear-gradient(120deg,var(--text) 30%,var(--gold) 60%,var(--gold2));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  animation:rise .8s cubic-bezier(.2,.8,.2,1) .1s both}
+.tagline{color:var(--dim);margin-top:12px;font-size:.95rem;animation:rise .8s cubic-bezier(.2,.8,.2,1) .2s both}
+.live{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:7px 16px;border-radius:99px;
+  background:color-mix(in srgb,var(--green) 8%,transparent);border:1px solid color-mix(in srgb,var(--green) 25%,transparent);
+  color:var(--green);font-size:.78rem;font-weight:600;letter-spacing:.06em;animation:rise .8s ease .3s both}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--green) 50%,transparent)}50%{box-shadow:0 0 0 6px transparent}}
+
+/* THEME SWITCH */
+.themes{display:flex;gap:8px;justify-content:center;margin-top:22px;animation:rise .8s ease .4s both}
+.theme-btn{width:34px;height:34px;border-radius:50%;border:2px solid var(--line);cursor:pointer;
+  transition:transform .25s cubic-bezier(.2,.8,.2,1),border-color .25s;background:var(--swatch)}
+.theme-btn:hover{transform:scale(1.15)}
+.theme-btn.active{border-color:var(--gold);transform:scale(1.15)}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:44px 0 40px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;
+  text-align:center;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s;
+  animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
+.stat:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--gold) 40%,var(--line))}
+.stat .n{font-size:2.1rem;font-weight:800;color:var(--gold);font-variant-numeric:tabular-nums}
+.stat .l{color:var(--dim);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;margin-top:6px}
+
+/* SECTIONS */
+.section-title{display:flex;align-items:baseline;gap:14px;margin:44px 0 20px;
+  font-size:1.05rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.section-title b{color:var(--text)}
+.section-title::after{content:'';flex:1;height:1px;background:var(--line)}
+
+/* CARDS */
+.grid{display:grid;gap:12px}
+.card{position:relative;display:flex;align-items:center;gap:14px;padding:16px 18px;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  text-decoration:none;color:inherit;overflow:hidden;
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s;
+  animation:rise .6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.card:hover{transform:translateY(-3px) scale(1.01);border-color:var(--gold);box-shadow:0 12px 40px rgba(0,0,0,.45)}
+.card-glow{position:absolute;inset:0;background:radial-gradient(400px circle at var(--mx,50%) var(--my,50%),
+  color-mix(in srgb,var(--gold) 6%,transparent),transparent 45%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover .card-glow{opacity:1}
+.badge{font-size:.6rem;font-weight:700;letter-spacing:.14em;padding:5px 10px;border-radius:99px;white-space:nowrap}
+.pass .badge{background:color-mix(in srgb,var(--gold) 12%,transparent);color:var(--gold);border:1px solid color-mix(in srgb,var(--gold) 30%,transparent)}
+.winner .badge{background:color-mix(in srgb,var(--green) 10%,transparent);color:var(--green);border:1px solid color-mix(in srgb,var(--green) 30%,transparent)}
+.avatar{width:44px;height:44px;border-radius:12px;overflow:hidden;flex-shrink:0;background:var(--bg2);
+  border:1px solid var(--line);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.card:hover .avatar{transform:scale(1.08) rotate(-2deg)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.card-body{display:flex;flex-direction:column;gap:3px;min-width:0}
+.handle{font-weight:700;font-size:1.02rem;color:var(--text);transition:color .25s}
+.card:hover .handle{color:var(--gold)}
+.meta{color:var(--dim);font-size:.75rem}
+.arrow{margin-left:auto;width:18px;height:18px;color:var(--dim);opacity:0;transform:translateX(-6px);
+  transition:all .3s cubic-bezier(.2,.8,.2,1);flex-shrink:0}
+.card:hover .arrow{opacity:1;transform:none;color:var(--gold)}
+.empty-state{text-align:center;padding:48px 20px;border:1px dashed var(--line);border-radius:var(--radius);color:var(--dim)}
+.empty-orb{width:12px;height:12px;border-radius:50%;background:var(--gold);margin:0 auto 16px;animation:pulse 2s infinite}
+.empty-state p{font-weight:600;color:var(--text);margin-bottom:6px}
+.empty-state span{font-size:.8rem}
+
+/* FOOTER */
+footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--line);display:flex;
+  justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;color:var(--dim);font-size:.78rem}
+footer a{color:var(--gold);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.updated{font-variant-numeric:tabular-nums}
+
+/* REVEAL ON SCROLL */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body data-theme="dark">
+<div class="wrap">
+<header>
+  <div class="hero-orb"></div>
+  <div class="crest"><img src="data:image/webp;base64,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" alt="Fomies"></div>
+  <h1>FOMIES</h1>
+  <p class="tagline">Access Pass Registry — verified holders &amp; raid winners, tracked live from the official channel</p>
+  <div class="live"><span class="dot"></span>LIVE · scanning every 60 seconds</div>
+  <div class="themes">
+    <button class="theme-btn active" data-t="dark"  style="--swatch:#0c0c14" title="Dark" aria-label="Dark theme"></button>
+    <button class="theme-btn" data-t="light" style="--swatch:#faf9f5" title="Light" aria-label="Light theme"></button>
+    <button class="theme-btn" data-t="midnight" style="--swatch:#0b1022" title="Midnight blue" aria-label="Midnight theme"></button>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat" style="animation-delay:.45s"><div class="n">1</div><div class="l">Access Passes</div></div>
+  <div class="stat" style="animation-delay:.55s"><div class="n">3</div><div class="l">Raid Winners</div></div>
+  <div class="stat" style="animation-delay:.65s"><div class="n">4</div><div class="l">Total Tracked</div></div>
+</div>
+
+<div class="section-title reveal"><b>Access Pass Members</b> briefcase issued</div>
+<div class="grid"><a class="card pass" style="animation-delay:0ms" data-themeable href="https://x.com/l0udp4ck42O" target="_blank" rel="noopener">
+  <div class="card-glow"></div>
+  <span class="badge">ACCESS PASS</span>
+  <div class="avatar"><img src="https://unavatar.io/x/l0udp4ck42O" alt="" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0lMjJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyUyMiB2aWV3Qm94PSUyMjAgMCAyNCAyNCUyMj48cmVjdCBmaWxsPSUyMiUyMzExMSUyMiB3aWR0aD0lMjIyNCUyMiBoZWlnaHQ9JTIyMjQlMjIgcng9JTIyNiUyMi8+PHRleHQgeD0lMjIxMiUyMiB5PSUyMjE2JTIyIGZvbnQtc2l6ZT0lMjIxMCUyMiBmaWxsPSUyMiUyMzg4OCUyMiB0ZXh0LWFuY2hvcj0lMjJtaWRkbGUlMjI+WDwvdGV4dD48L3N2Zz4="></div>
+  <div class="card-body"><span class="handle">@l0udp4ck42O</span><span class="meta">View on X &rarr;</span></div>
+  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+</a></div>
+
+<div class="section-title reveal"><b>Raid Winners</b> access pass drops</div>
+<div class="grid"><a class="card winner" style="animation-delay:0ms" data-themeable href="https://x.com/_Potential_man" target="_blank" rel="noopener">
+  <div class="card-glow"></div>
+  <span class="badge">RAID WINNER</span>
+  <div class="avatar"><img src="https://unavatar.io/x/_Potential_man" alt="" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0lMjJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyUyMiB2aWV3Qm94PSUyMjAgMCAyNCAyNCUyMj48cmVjdCBmaWxsPSUyMiUyMzExMSUyMiB3aWR0aD0lMjIyNCUyMiBoZWlnaHQ9JTIyMjQlMjIgcng9JTIyNiUyMi8+PHRleHQgeD0lMjIxMiUyMiB5PSUyMjE2JTIyIGZvbnQtc2l6ZT0lMjIxMCUyMiBmaWxsPSUyMiUyMzg4OCUyMiB0ZXh0LWFuY2hvcj0lMjJtaWRkbGUlMjI+WDwvdGV4dD48L3N2Zz4="></div>
+  <div class="card-body"><span class="handle">@_Potential_man</span><span class="meta">View on X &rarr;</span></div>
+  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+</a>
+<a class="card winner" style="animation-delay:60ms" data-themeable href="https://x.com/hoomihero1" target="_blank" rel="noopener">
+  <div class="card-glow"></div>
+  <span class="badge">RAID WINNER</span>
+  <div class="avatar"><img src="https://unavatar.io/x/hoomihero1" alt="" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0lMjJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyUyMiB2aWV3Qm94PSUyMjAgMCAyNCAyNCUyMj48cmVjdCBmaWxsPSUyMiUyMzExMSUyMiB3aWR0aD0lMjIyNCUyMiBoZWlnaHQ9JTIyMjQlMjIgcng9JTIyNiUyMi8+PHRleHQgeD0lMjIxMiUyMiB5PSUyMjE2JTIyIGZvbnQtc2l6ZT0lMjIxMCUyMiBmaWxsPSUyMiUyMzg4OCUyMiB0ZXh0LWFuY2hvcj0lMjJtaWRkbGUlMjI+WDwvdGV4dD48L3N2Zz4="></div>
+  <div class="card-body"><span class="handle">@hoomihero1</span><span class="meta">View on X &rarr;</span></div>
+  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+</a>
+<a class="card winner" style="animation-delay:120ms" data-themeable href="https://x.com/AliLuckyXyz" target="_blank" rel="noopener">
+  <div class="card-glow"></div>
+  <span class="badge">RAID WINNER</span>
+  <div class="avatar"><img src="https://unavatar.io/x/AliLuckyXyz" alt="" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0lMjJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyUyMiB2aWV3Qm94PSUyMjAgMCAyNCAyNCUyMj48cmVjdCBmaWxsPSUyMiUyMzExMSUyMiB3aWR0aD0lMjIyNCUyMiBoZWlnaHQ9JTIyMjQlMjIgcng9JTIyNiUyMi8+PHRleHQgeD0lMjIxMiUyMiB5PSUyMjE2JTIyIGZvbnQtc2l6ZT0lMjIxMCUyMiBmaWxsPSUyMiUyMzg4OCUyMiB0ZXh0LWFuY2hvcj0lMjJtaWRkbGUlMjI+WDwvdGV4dD48L3N2Zz4="></div>
+  <div class="card-body"><span class="handle">@AliLuckyXyz</span><span class="meta">View on X &rarr;</span></div>
+  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+</a></div>
+
+<footer class="reveal">
+  <span>Auto-tracked · not affiliated with fomies.family</span>
+  <span class="updated">Updated Oct 17, 2026 · 11:51 UTC</span>
+  <span><a href="members.csv" download>CSV export</a> · <a href="https://t.me/s/fomiesofficial" target="_blank" rel="noopener">source ↗</a></span>
+</footer>
+</div>
+<script>
+// theme persistence
+const saved=localStorage.getItem('fomies-theme')||'dark';
+document.documentElement.dataset.theme=saved;
+document.querySelectorAll('.theme-btn').forEach(b=>{
+  b.classList.toggle('active',b.dataset.t===saved);
+  b.onclick=()=>{
+    document.documentElement.dataset.theme=b.dataset.t;
+    localStorage.setItem('fomies-theme',b.dataset.t);
+    document.querySelectorAll('.theme-btn').forEach(x=>x.classList.toggle('active',x===b));
+  };
+});
+// card cursor glow
+document.addEventListener('pointermove',e=>{
+  const c=e.target.closest('.card'); if(!c)return;
+  const r=c.getBoundingClientRect();
+  c.querySelector('.card-glow').style.setProperty('--mx',(e.clientX-r.left)+'px');
+  c.querySelector('.card-glow').style.setProperty('--my',(e.clientY-r.top)+'px');
+});
+// scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// auto-refresh every 90s (site regenerates server-side)
+setTimeout(()=>location.reload(),90000);
+</script>
+</body></html>
